@@ -2,25 +2,16 @@ importScripts("https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"
 importScripts("https://www.gstatic.com/firebasejs/10.7.0/firebase-messaging-compat.js")
 
 const firebaseConfig = {
-
 apiKey: "AIzaSyALO-uHKlHLGU79HoM9ja8hvqzx2_wYyo8",
-
 authDomain: "notificationsender-13a55.firebaseapp.com",
-
 projectId: "notificationsender-13a55",
-
 storageBucket: "notificationsender-13a55.firebasestorage.app",
-
 messagingSenderId: "692307366836",
-
 appId: "1:692307366836:web:23e74774c0ebc52683d8e1",
-
 measurementId: "G-MZ3RXG4SCT"
-
 };
 
 const app = firebase.initializeApp(firebaseConfig);
-
 const messaging = firebase.messaging();
 
 messaging.onBackgroundMessage(payload=>{

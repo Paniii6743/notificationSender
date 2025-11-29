@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class notificationController {
+
     @GetMapping("/send")
     public String send(@RequestParam String token) throws FirebaseMessagingException {
         Notification notification = Notification.builder().setTitle("NotificaionSender").setBody("This is a test notificaion.").build();

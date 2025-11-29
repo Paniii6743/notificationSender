@@ -24,7 +24,6 @@ public class fireBaseConfig {
 
         return FirebaseApp.initializeApp(options);
 
-
     }
 }
 
